@@ -39,7 +39,7 @@
     ```
 
   - Every Child
-    Selects all the p tags even the ones inside h1 tag.
+    - Selects all the p tags even the ones inside h1 tag.
 
     ```css
       div p {
