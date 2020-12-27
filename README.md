@@ -75,3 +75,38 @@
     color: initial; /* Way to prevent*/
   }
   ```
+
+  - Specificity
+
+    - https://specificity.keegan.st/
+    - It contains 4 numbers.
+      - 0 0 0 0
+      - important ids classes elements
+
+    ```html
+    <h2 id="heading-id" class="header">
+      <span
+        >Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.</span
+      >
+      Something else here as well.
+    </h2>
+
+    <p id="para" class="paragraph">
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout.
+    </p>
+    ```
+
+    ```css
+    /* 0 0 1 2 */
+    h2.header span {
+      color: 'pink';
+    }
+
+    /* More specific */
+    /* 0 1 0 1 */
+    #heading-id span {
+      color: 'purple';
+    }
+    ```
