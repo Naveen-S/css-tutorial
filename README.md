@@ -110,3 +110,37 @@
       color: 'purple';
     }
     ```
+    
+    
+   - Pseudo classes (state selectors)
+   - 
+     
+     ```html
+        <div>
+          <label>Email</label>
+          <input type="email" class="email" disabled />
+        </div>
+        <div>
+          <label>My Name is</label>
+          <input type="text" class="name" />
+        </div>
+        <button class="submit" type="submit">Send</button>
+      ```
+     
+     ```css   
+        .submit:hover {
+            background-color: red;
+          }
+          .submit:focus {
+            background-color: cyan;
+          }
+          .email:disabled {
+            background-color: green;
+          }
+          .name:hover {
+            background-color: purple;
+          }
+          .name:required {
+            background-color: yellow;
+          }
+      ```
