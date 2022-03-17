@@ -160,4 +160,9 @@
       -  `nth-last-of-type`:
 
       
-      
+     - Box Model
+        - margin-collapsing
+        - box-sizing: `border-box` - size will be inclusive of padding and border.  Say width: 100px and height: 100px, if we provide padding 10px content's height and width will be adjusted (shrunken down) so that height and width still remains 100.
+        - `content-box`: padding and border is additional, even though we specify width and height to be 100px padding and border will add on to that, so technically container's height and width will be greater than 100px.
+        
+       -
