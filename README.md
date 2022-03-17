@@ -144,3 +144,20 @@
             background-color: yellow;
           }
       ```
+      
+      - `span:first-child` : Add style to first child of span in a container. If the first child of a container is a div or anything else this style won't be applied.
+      
+      - `p:last-child`: Similar to above.
+      
+      - `span:first-of-type`: If you want the first span of the container (not first child of the container, span:first-child is applied only when the first child of the container is span, but span:first-of-type add the style to first child of the conatiner irrespective of whether it is the first child or not, but it should be first span in the container.)
+      -  `:last-of-type`: Similar.
+      -  `span:nth-child(2)`: If the 2nd child of the container is span apply these styles.
+      -  `span:nth-child(even)`; Even children will get those styles.
+      -  `span:nth-child(odd)`: Odd children.
+      -  `span:nth-child(2n+3)`; We can also use the formula. 
+      -  `span:nth-last-child(2n+1)`: Reverse of `nth-child`.
+      -  `nth-first-of-type`:
+      -  `nth-last-of-type`:
+
+      
+      
