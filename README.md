@@ -167,35 +167,41 @@
         
         
         
-     - Layout and Positioning.
-        - Column layout:
-            ```html 
-             <style>
-              .parent {
-                height: 100vh;
-                column-width: 400px; /* Minimum width the column.*/
-                column-count: 5; /* Maximum columns that could be accomadated.*/
-                column-rule: 30px solid lightgreen; /* Similar to border, but it can overlap the content not exactly like border. */
-                column-gap: 40px; /* Now gap is increased so 30px border can be easily accomadated without overlap.*/
-                column-fill: balance; /* By default it is balance which means content should be equally distributed between all the columns. If its auto if fills the first column first and then second and then third.*/
-              }
-              h2 {
-                column-span: all;
-              }
-            </style>
-            <div class="parent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit modi iusto repellat, adipisci quam. Repellat ducimus expedita ipsam quaerat.
-              <h2>
-                Vijaya Karnataka
-              </h2>
-              <hr>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis omnis accusamus deserunt. Laudantium similique mollitia praesentium ab ipsam veniam dignissimos consectetur. Culpa sapiente impedit autem iste perferendis et. Odio, laborum quia fugiat quo numquam quam magnam eveniet dolores incidunt, quasi blanditiis distinctio commodi ratione ad recusandae provident quod sint. Adipisci!
-              <hr>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quidem distinctio ratione, consequatur similique natus odit maxime fugit vel eveniet illum ipsum, repudiandae reiciendis. Perspiciatis officiis atque inventore fugit eius reprehenderit iste natus sapiente quo, delectus quas molestias, eos dignissimos accusamus corporis velit. Molestias eum minus numquam esse illum quod libero beatae dignissimos perspiciatis doloribus possimus fugiat, quibusdam soluta.
-            </div>
-            ```
-            
-         - Fixed:
-              - To fix the position on the div/item irrespective of the parent to a fixed position.
-          
-          -     
+ - Layout and Positioning.
+    - Column layout:
+        ```html 
+         <style>
+          .parent {
+            height: 100vh;
+            column-width: 400px; /* Minimum width the column.*/
+            column-count: 5; /* Maximum columns that could be accomadated.*/
+            column-rule: 30px solid lightgreen; /* Similar to border, but it can overlap the content not exactly like border. */
+            column-gap: 40px; /* Now gap is increased so 30px border can be easily accomadated without overlap.*/
+            column-fill: balance; /* By default it is balance which means content should be equally distributed between all the columns. If its auto if fills the first column first and then second and then third.*/
+          }
+          h2 {
+            column-span: all;
+          }
+        </style>
+        <div class="parent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit modi iusto repellat, adipisci quam. Repellat ducimus expedita ipsam quaerat.
+          <h2>
+            Vijaya Karnataka
+          </h2>
+          <hr>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis omnis accusamus deserunt. Laudantium similique mollitia praesentium ab ipsam veniam dignissimos consectetur. Culpa sapiente impedit autem iste perferendis et. Odio, laborum quia fugiat quo numquam quam magnam eveniet dolores incidunt, quasi blanditiis distinctio commodi ratione ad recusandae provident quod sint. Adipisci!
+          <hr>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quidem distinctio ratione, consequatur similique natus odit maxime fugit vel eveniet illum ipsum, repudiandae reiciendis. Perspiciatis officiis atque inventore fugit eius reprehenderit iste natus sapiente quo, delectus quas molestias, eos dignissimos accusamus corporis velit. Molestias eum minus numquam esse illum quod libero beatae dignissimos perspiciatis doloribus possimus fugiat, quibusdam soluta.
+        </div>
+        ```
+
+     - Default position is `static`.
+       
+     - Fixed:
+          - To fix the position on the div/item irrespective of the parent to a fixed position.
+
+      - Sticky:
+          - Similar to fixed but moves out of the screen if you scroll the page. Basically position will be fixed within the parent container. Majorly can be used a table header. 
+      
+      - Relative & Absolute: You know those.  
+       
