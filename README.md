@@ -165,4 +165,37 @@
         - box-sizing: `border-box` - size will be inclusive of padding and border.  Say width: 100px and height: 100px, if we provide padding 10px content's height and width will be adjusted (shrunken down) so that height and width still remains 100.
         - `content-box`: padding and border is additional, even though we specify width and height to be 100px padding and border will add on to that, so technically container's height and width will be greater than 100px.
         
-       -
+        
+        
+     - Layout and Positioning.
+        - Column layout:
+            ```html 
+             <style>
+              .parent {
+                height: 100vh;
+                column-width: 400px; /* Minimum width the column.*/
+                column-count: 5; /* Maximum columns that could be accomadated.*/
+                column-rule: 30px solid lightgreen; /* Similar to border, but it can overlap the content not exactly like border. */
+                column-gap: 40px; /* Now gap is increased so 30px border can be easily accomadated without overlap.*/
+                column-fill: balance; /* By default it is balance which means content should be equally distributed between all the columns. If its auto if fills the first column first and then second and then third.*/
+              }
+              h2 {
+                column-span: all;
+              }
+            </style>
+            <div class="parent">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non impedit modi iusto repellat, adipisci quam. Repellat ducimus expedita ipsam quaerat.
+              <h2>
+                Vijaya Karnataka
+              </h2>
+              <hr>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis omnis accusamus deserunt. Laudantium similique mollitia praesentium ab ipsam veniam dignissimos consectetur. Culpa sapiente impedit autem iste perferendis et. Odio, laborum quia fugiat quo numquam quam magnam eveniet dolores incidunt, quasi blanditiis distinctio commodi ratione ad recusandae provident quod sint. Adipisci!
+              <hr>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatibus quidem distinctio ratione, consequatur similique natus odit maxime fugit vel eveniet illum ipsum, repudiandae reiciendis. Perspiciatis officiis atque inventore fugit eius reprehenderit iste natus sapiente quo, delectus quas molestias, eos dignissimos accusamus corporis velit. Molestias eum minus numquam esse illum quod libero beatae dignissimos perspiciatis doloribus possimus fugiat, quibusdam soluta.
+            </div>
+            ```
+            
+         - Fixed:
+              - To fix the position on the div/item irrespective of the parent to a fixed position.
+          
+          -     
