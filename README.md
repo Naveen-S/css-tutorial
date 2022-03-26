@@ -205,7 +205,3 @@
       
       - Relative & Absolute: You know those.  
        
- 
-
-### Advanced CSS
-    
